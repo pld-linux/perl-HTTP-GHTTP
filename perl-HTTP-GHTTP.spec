@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	HTTP
 %define	pnam	GHTTP
-Summary:	Perl interface to the gnome ghttp library
-Summary(pl):	Modu³ perla z interfejsem do biblioteki gnome ghttp
+Summary:	HTTP::GHTTP - Perl interface to the GNOME ghttp library
+Summary(pl):	HTTP::GHTTP - modu³ Perla z interfejsem do biblioteki GNOME ghttp
 Name:		perl-HTTP-GHTTP
 Version:	1.07
 Release:	2
@@ -16,10 +16,16 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Perl interface to the gnome ghttp library.
+The HTTP::GHTTP module is a simple Perl interface to the GNOME ghttp
+library. It allows you to make very simple HTTP requests, without the
+weight of something like LWP. This makes it very useful in situations
+where memory and speed are at a premium, such as mod_perl.
 
 %description -l pl
-Modu³ perla z interfejsem do biblioteki GNOME ghttp.
+Modu³ Perla HTTP::GHTTP stanowi prosty interfejs do biblioteki GNOME
+ghttp. Umo¿liwia on tworzenie bardzo prostych zapytañ HTTP bez narzutu
+czego¶ takiego, jak LWP. Czyni to go bardzo przydatnym, gdy pamiêæ i
+prêdko¶æ s± bardzo istotne, np. w mod_perl.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
