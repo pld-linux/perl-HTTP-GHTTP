@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	HTTP
-%define	pnam	GHTTP
+%define		pdir	HTTP
+%define		pnam	GHTTP
 Summary:	HTTP::GHTTP - Perl interface to the GNOME ghttp library
 Summary(pl):	HTTP::GHTTP - modu³ Perla z interfejsem do biblioteki GNOME ghttp
 Name:		perl-HTTP-GHTTP
