@@ -2,23 +2,23 @@
 %define	pdir	HTTP
 %define	pnam	GHTTP
 Summary:	Perl interface to the gnome ghttp library 
-Summary(pl):	Modu³ perla z interfejsem na bibliotekê gnome ghttp
+Summary(pl):	Modu³ perla z interfejsem do biblioteki gnome ghttp
 Name:		perl-HTTP-GHTTP
 Version:	1.07
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
-BuildRequires:	perl >= 5.6
 BuildRequires:	libghttp-devel
+BuildRequires:	perl >= 5.6
+BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Perl interface to the gnome ghttp library.
 
 %description -l pl
-Modu³ perla z interfejsem na bibliotekê gnome ghttp.
+Modu³ perla z interfejsem do biblioteki GNOME ghttp.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -32,14 +32,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf Changes README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc Changes README
 %attr(755,root,root) %{_bindir}/g-request
 %dir %{perl_sitearch}/HTTP
 %{perl_sitearch}/HTTP/GHTTP.pm
