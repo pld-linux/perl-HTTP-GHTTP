@@ -3,7 +3,7 @@ Summary:	Perl interface to the gnome ghttp library
 Summary(pl):	Modu³ perla z interfejsem na bibliotekê gnome ghttp
 Name:		perl-HTTP-GHTTP
 Version:	1.06
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -41,7 +41,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *.gz
 %attr(755,root,root) %{_bindir}/g-request
+%dir %{perl_sitearch}/HTTP
 %{perl_sitearch}/HTTP/GHTTP.pm
+%dir %{perl_sitearch}/auto/HTTP
 %dir %{perl_sitearch}/auto/HTTP/GHTTP
 %attr(755,root,root) %{perl_sitearch}/auto/HTTP/GHTTP/*.so
 %{_mandir}/man3/*
