@@ -1,7 +1,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	HTTP
 %define	pnam	GHTTP
-Summary:	Perl interface to the gnome ghttp library 
+Summary:	Perl interface to the gnome ghttp library
 Summary(pl):	Modu³ perla z interfejsem do biblioteki gnome ghttp
 Name:		perl-HTTP-GHTTP
 Version:	1.07
