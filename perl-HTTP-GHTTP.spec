@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	HTTP
 %define	pnam	GHTTP
-%include	/usr/lib/rpm/macros.perl
 Summary:	Perl interface to the gnome ghttp library 
 Summary(pl):	Modu³ perla z interfejsem na bibliotekê gnome ghttp
 Name:		perl-HTTP-GHTTP
 Version:	1.06
-Release:	5
-
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,7 +21,7 @@ Perl interface to the gnome ghttp library.
 Modu³ perla z interfejsem na bibliotekê gnome ghttp.
 
 %prep
-%setup -q -n HTTP-GHTTP-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
