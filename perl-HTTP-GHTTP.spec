@@ -26,7 +26,7 @@ Modu³ perla z interfejsem do biblioteki GNOME ghttp.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
