@@ -6,7 +6,7 @@
 %define		pdir	HTTP
 %define		pnam	GHTTP
 Summary:	HTTP::GHTTP - Perl interface to the GNOME ghttp library
-Summary(pl.UTF-8):   HTTP::GHTTP - moduł Perla z interfejsem do biblioteki GNOME ghttp
+Summary(pl.UTF-8):	HTTP::GHTTP - moduł Perla z interfejsem do biblioteki GNOME ghttp
 Name:		perl-HTTP-GHTTP
 Version:	1.07
 Release:	3
