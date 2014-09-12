@@ -62,6 +62,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/HTTP/GHTTP.pm
 %dir %{perl_vendorarch}/auto/HTTP
 %dir %{perl_vendorarch}/auto/HTTP/GHTTP
-%{perl_vendorarch}/auto/HTTP/GHTTP/GHTTP.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/HTTP/GHTTP/GHTTP.so
 %{_mandir}/man3/HTTP::GHTTP*.3pm*
